@@ -1,0 +1,11 @@
+.logo {
+  display: flex;
+  border: 4px solid black;
+  border-color: black;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.logoDescript {
+  color: blue;
+}

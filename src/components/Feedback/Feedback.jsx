@@ -1,11 +1,7 @@
 import React from "react";
 
 const Feedback = () => {
-  return (
-    <div>
-      <button className="btn"></button>
-    </div>
-  );
+  return <div></div>;
 };
 
 export default Feedback;
