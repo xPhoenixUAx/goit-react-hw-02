@@ -1,10 +1,12 @@
-const Options = () => {
+const Options = ({ handleFeedback, handleReset }) => {
   return (
     <div>
-      <button className="btn">Good</button>
-      <button className="btn">Neutral</button>
-      <button className="btn">Bad</button>
-      <button className="btn">Reset</button>
+      <button onClick={() => handleFeedback("good")}>Добре</button>
+      <button onClick={() => handleFeedback("neutral")}>Нейтрально</button>
+      <button onClick={() => handleFeedback("bad")}>Погано</button>
+      <button className="btn" onClick={handleReset}>
+        Reset
+      </button>
     </div>
   );
 };
