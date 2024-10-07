@@ -1,4 +1,4 @@
-const Options = ({ handleFeedback, handleReset }) => {
+const Options = ({ handleFeedback, handleReset, feedbackTypes }) => {
   return (
     <div>
       <button onClick={() => handleFeedback("good")}>Добре</button>
