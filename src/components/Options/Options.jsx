@@ -4,9 +4,9 @@ const Options = ({ handleFeedback, handleReset }) => {
       <button onClick={() => handleFeedback("good")}>Добре</button>
       <button onClick={() => handleFeedback("neutral")}>Нейтрально</button>
       <button onClick={() => handleFeedback("bad")}>Погано</button>
-      <button className="btn" onClick={handleReset}>
-        Reset
-      </button>
+      {(feedbackTypes.good > 0 || feedbackTypes.neutral > 0 || feedbackTypes.bad > 0) && (
+        <button onClick={handleReset}>Reset</button>
+      )}
     </div>
   );
 };
