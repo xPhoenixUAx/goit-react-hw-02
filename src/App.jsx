@@ -40,7 +40,7 @@ const App = () => {
   return (
     <div>
       <Description />
-      <Options handleFeedback={handleFeedback} handleReset={handleReset} />
+      <Options handleFeedback={handleFeedback} handleReset={handleReset} feedbackTypes={feedbackTypes} />
       {totalFeedback > 0 ? (
         <Feedback
           feedbackTypes={feedbackTypes}
